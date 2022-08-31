@@ -1,0 +1,61 @@
+{
+    "@context": {
+        "address": "https://smartdatamodels.org/address",
+        "airDraught": "https://smartdatamodels.org/dataModel.MarineTransport/airDraught",
+        "alternateName": "https://smartdatamodels.org/alternateName",
+        "areaServed": "https://smartdatamodels.org/areaServed",
+        "beam": "https://smartdatamodels.org/dataModel.MarineTransport/beam",
+        "buildingAt": "https://smartdatamodels.org/dataModel.MarineTransport/buildingAt",
+        "callSign": "https://smartdatamodels.org/dataModel.MarineTransport/callSign",
+        "courseOverGround": "https://smartdatamodels.org/dataModel.MarineTransport/courseOverGround",
+        "createdAt": {
+            "@id": "ngsi-ld:createdAt",
+            "@type": "DateTime"
+        },
+        "dataProvider": "https://smartdatamodels.org/dataProvider",
+        "dateCreated": "https://smartdatamodels.org/dateCreated",
+        "dateModified": "https://smartdatamodels.org/dateModified",
+        "deadweightTonnage": "https://smartdatamodels.org/dataModel.MarineTransport/deadweightTonnage",
+        "description": "http://purl.org/dc/terms/description",
+        "destinationPort": "https://smartdatamodels.org/dataModel.MarineTransport/destinationPort",
+        "draught": "https://smartdatamodels.org/dataModel.MarineTransport/draught",
+        "financialOwner": "https://smartdatamodels.org/dataModel.MarineTransport/financialOwner",
+        "flagCode": "https://smartdatamodels.org/dataModel.MarineTransport/flagCode",
+        "grossTonnage": "https://smartdatamodels.org/dataModel.MarineTransport/grossTonnage",
+        "heading": "https://smartdatamodels.org/dataModel.MarineTransport/heading",
+        "id": "@id",
+        "imo": "https://smartdatamodels.org/dataModel.MarineTransport/imo",
+        "length": "https://smartdatamodels.org/dataModel.MarineTransport/length",
+        "location": "ngsi-ld:location",
+        "manager": "https://smartdatamodels.org/dataModel.MarineTransport/manager",
+        "maximumDraught": "https://smartdatamodels.org/dataModel.MarineTransport/maximumDraught",
+        "mmsi": "https://smartdatamodels.org/dataModel.MarineTransport/mmsi",
+        "modifiedAt": {
+            "@id": "ngsi-ld:modifiedAt",
+            "@type": "DateTime"
+        },
+        "name": "https://smartdatamodels.org/name",
+        "navigationStatus": "https://smartdatamodels.org/dataModel.MarineTransport/navigationStatus",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
+        "observedAt": {
+            "@id": "ngsi-ld:observedAt",
+            "@type": "DateTime"
+        },
+        "owner": "https://smartdatamodels.org/owner",
+        "ownerVessel": "https://smartdatamodels.org/dataModel.MarineTransport/ownerVessel",
+        "photo": "https://smartdatamodels.org/dataModel.MarineTransport/photo",
+        "previousPort": "https://smartdatamodels.org/dataModel.MarineTransport/previousPort",
+        "rateOfTurn": "https://smartdatamodels.org/dataModel.MarineTransport/rateOfTurn",
+        "seeAlso": "https://smartdatamodels.org/seeAlso",
+        "source": "https://smartdatamodels.org/source",
+        "speedOverGround": "https://smartdatamodels.org/dataModel.MarineTransport/speedOverGround",
+        "technicalManager": "https://smartdatamodels.org/dataModel.MarineTransport/technicalManager",
+        "toBow": "https://smartdatamodels.org/dataModel.MarineTransport/toBow",
+        "toPort": "https://smartdatamodels.org/dataModel.MarineTransport/toPort",
+        "toStardboard": "https://smartdatamodels.org/dataModel.MarineTransport/toStardboard",
+        "toStern": "https://smartdatamodels.org/dataModel.MarineTransport/toStern",
+        "type": "@type",
+        "vesselSubType": "https://smartdatamodels.org/dataModel.MarineTransport/vesselSubType",
+        "vesselType": "https://smartdatamodels.org/dataModel.MarineTransport/vesselType"
+    }
+}
