@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
-  "modelTags": "",
+  "$schemaVersion": "0.0.2",
+  "modelTags": "I4Trust",
   "derivedFrom": "",
   "license": "",
-  "$id": "https://gitlab.com/hiades/fiware/smart-data-models/-/raw/main/dataModel.Vessel/schema.json",
+  "$id": "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/Vessel/schema.json",
   "title": "Smart Data models Vessel schema",
   "description": "The data model is intended to provide information about vessels. It allows to represent the properties of each vessel: static and dynamic information",
   "type": "object",
