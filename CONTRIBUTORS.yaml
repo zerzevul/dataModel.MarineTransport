@@ -1,9 +1,9 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
--
-  name: Salomé
-  surname: González
+- name: "Salom\xE9"
+  surname: "Gonz\xE1lez"
   mail: sgonzalez@hiades.es
   organization: HIADES BUSINESS PATTERNS SL
   project: iGreenPort  (i4Trust Program) and others
   comments: HIADES is a consolidated company in the port sector, with its Ecosystem of Products 'AMURA' present internationally in more than 20 ports, and its Digital Twin 'AURORA'  Fiware-based, for the digitization of Smart Ports.
+  year: 2022
