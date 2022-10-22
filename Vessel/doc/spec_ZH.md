@@ -1,0 +1,975 @@
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+实体。船只  
+=====<!-- /10-Header -->  
+<!-- 15-License -->  
+[开放许可](https://github.com/smart-data-models//dataModel.MarineTransport/blob/master/Vessel/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+全局描述。**该数据模型的目的是提供有关船舶的信息。它允许代表每个船只的属性：静态和动态信息**。  
+版本：0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
+
+##属性列表  
+
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `airDraught[number]`: 空气吃水（从船舶最高点到水线的距离）  . Model: [http://schema.org/Number](http://schema.org/Number)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `beam[number]`: 船体的宽度。  . Model: [https://schema.org/Number](https://schema.org/Number)- `buildingAt[string]`: 用ISO 8601 UTC格式表示的船舶建造日期和时间。  . Model: [https://schema.org/Text](https://schema.org/Text)- `callSign[string]`: 海事呼号是分配给船只的独特标识符号  . Model: [https://schema.org/Text](https://schema.org/Text)- `courseOverGround[number]`: 地面上的路线（COG）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `createdAt[string]`: 用ISO 8601 UTC格式表示的实体的创建日期和时间。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 识别统一数据实体提供者的字符序列  . Model: [https://schema.org/Text](https://schema.org/Text)- `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `deadweightTonnage[number]`: 载重量吨位（DWT）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: 对这个项目的描述  - `destinationPort[string]`: 目的地港口（地理编码方案UN/LOCODE（联合国贸易和运输地点代码）。https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)  . Model: [https://schema.org/Text](https://schema.org/Text)- `draught[number]`: 吃水（水线与船体底部（龙骨）的垂直距离）。  . Model: [http://schema.org/Number](http://schema.org/Number)- `financialOwner[string]`: 财务负责人  . Model: [https://schema.org/Text](https://schema.org/Text)- `flagCode[string]`: 国际旗帜代码（ISO 3166-1 alfa-2）。  . Model: [https://schema.org/Text](https://schema.org/Text)- `grossTonnage[number]`: 总吨位（GT）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `heading[number]`: 船舶的航向（HDG）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[string]`: 实体的唯一标识符  - `imo[number]`: 国际海事组织编号（一个全球性永远的UID）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `length[number]`: 船只的长度。  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[object]`: 项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形属性。  - `manager[string]`: 经理船  . Model: [https://schema.org/Text](https://schema.org/Text)- `maximumDraught[number]`: 最大吃水。  . Model: [https://schema.org/Number](https://schema.org/Number)- `mmsi[number]`: 海上移动服务身份号码（一个临时分配的UID，由该对象当前的旗帜状态颁发）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `modifiedAt[string]`: 实体最后修改的日期和时间，用ISO 8601 UTC格式表示。  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: 船只名称  . Model: [https://schema.org/Text](https://schema.org/Text)- `navigationStatus[number]`: 枚举。0=使用发动机航行,1=抛锚,2=不受指挥,3=可操作性受限,4=吃水受限,5=停泊,6=搁浅,7=捕鱼,8=航行中,9=为将来修正HSC的航行状态而保留。10=为将来修改WIG的航行状态而保留,11=为将来使用而保留,12=为将来使用而保留,13=为将来使用而保留,14=AIS-SART激活,15=未定义(默认)'。导航状态。AIVDM/AIVDO数据格式。  . Model: [http://schema.org/Number](http://schema.org/Number)- `observedAt[string]`: 该观测的日期和时间由ISO 8601 UTC格式表示。  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `ownerVessel[string]`: 船主船舶  . Model: [https://schema.org/Text](https://schema.org/Text)- `photo[string]`: 船只照片URL  . Model: [https://schema.org/Text](https://schema.org/Text)- `previousPort[string]`: 以前的港口（地理编码方案UN/LOCODE（联合国贸易和运输地点代码）。https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations）。  . Model: [https://schema.org/Text](https://schema.org/Text)- `rateOfTurn[number]`: 转弯率（ROT）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `speedOverGround[number]`: 越过地面的速度（SOG）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `technicalManager[string]`: 技术经理  . Model: [https://schema.org/Text](https://schema.org/Text)- `toBow[number]`: 尺寸到弓。  . Model: [http://schema.org/Number](http://schema.org/Number)- `toPort[number]`: 尺寸到端口。  . Model: [http://schema.org/Number](http://schema.org/Number)- `toStardboard[number]`: 右舷的尺寸。  . Model: [http://schema.org/Number](http://schema.org/Number)- `toStern[number]`: 维度到斯特恩。  . Model: [http://schema.org/Number](http://schema.org/Number)- `type[string]`: NGSI实体类型。它必须是船体  - `vesselSubType[number]`: 枚举。0=不可用(默认),1-19=保留给将来使用,20=地面上的翅膀(WIG),所有该类型的船只,21=地面上的翅膀(WIG),危险类别A,22=地面上的翅膀(WIG)。危险类别B,23=地面上的机翼(WIG), 危险类别C,24=地面上的机翼(WIG), 危险类别D,25-29=地面上的机翼(WIG), 保留给将来使用,30=钓鱼,31=拖船,32=拖船。长度超过200米或宽度超过25米,33=疏浚或水下作业,34=潜水作业,35=军事作业,36=航行,37=游船,38-39=保留,40=高速船(HSC),所有该类型的船只,41=高速船(HSC),危险类别A,42=高速船(HSC),危险类别B,43=高速船(HSC),危险类别C。44=高速船(HSC), 危险类别D,45-48=高速船(HSC), 保留给未来使用,49=高速船(HSC), 没有其他信息,50=驾驶船,51=搜救船,52=拖船,53=港口拖船,54=防污染设备,55=执法,56-57=备用-本地船,58=医疗运输,59=非战斗船根据RR决议No.18,60=客运，所有该类型的船舶,61=客运，危险类别A,62=客运，危险类别B,63=客运，危险类别C,64=客运，危险类别D,65-68=客运，保留给未来使用,69=客运，没有其他信息。70=货物，所有该类型的船舶，71=货物，危险类别A，72=货物，危险类别B，73=货物，危险类别C，74=货物，危险类别D，75-78=货物，保留给未来使用，79=货物，没有其他信息，80=油轮。所有该类型的船舶,81=油轮，危险类别A,82=油轮，危险类别B,83=油轮，危险类别C,84=油轮，危险类别D,85-88=油轮，保留将来使用,89=油轮，无其他信息,90=其他类型。所有该类型的船舶,91=其他类型，危险类别A,92=其他类型，危险类别B,93=其他类型，危险类别C,94=其他类型，危险类别D,95-98=其他类型，保留供将来使用,99=其他类型，无附加信息'。容器子类型的代码  . Model: [https://schema.org/Number](https://schema.org/Number)- `vesselType[number]`: 枚举：'1=保留，2=地面上的机翼，3=特殊类别，4=高速船，5=特殊类别，6=乘客，7=货物，8=油轮，9=其他'。船只类型的代码  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+所需属性  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## 数据模型的属性描述  
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
+Vessel:    
+  description: 'The data model is intended to provide information about vessels. It allows to represent the properties of each vessel: static and dynamic information'    
+  properties:    
+    address:    
+      description: 'The mailing address'    
+      properties:    
+        addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          type: string    
+        addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          type: string    
+        addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          type: string    
+        postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          type: string    
+        postalCode:    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          type: string    
+        streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          type: string    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    airDraught:    
+      description: 'Air Draught (distance from the top of a vessel''''s highest point to its waterline)'    
+      type: number    
+      x-ngsi:    
+        model: http://schema.org/Number    
+        type: Property    
+        units: ' meters'    
+    alternateName:    
+      description: 'An alternative name for this item'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: 'The geographic area where a service or offered item is provided'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    beam:    
+      description: 'Beam of Vessel.'    
+      maximum: 1000    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+        units: ' meters'    
+    buildingAt:    
+      description: 'Date and time of building of the vessel represented by an ISO 8601 UTC format.'    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    callSign:    
+      description: 'Maritime call signs are call signs assigned as unique identifiers to vessels'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    courseOverGround:    
+      description: 'Course Over Ground (COG).'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+        units: ' degree'    
+    createdAt:    
+      description: 'Date and time of creation of the entity represented by an ISO 8601 UTC format.'    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: 'A sequence of characters identifying the provider of the harmonised data entity'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dateCreated:    
+      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    deadweightTonnage:    
+      description: 'Deadweight Tonnage (DWT).'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+        units: ' tons'    
+    description:    
+      description: 'A description of this item'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    destinationPort:    
+      description: 'Destination Port (Geographic coding scheme UN/LOCODE (United Nations Code for Trade and Transport Locations). https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    draught:    
+      description: 'Draught (vertical distance between the waterline and the bottom of the hull (keel))'    
+      type: number    
+      x-ngsi:    
+        model: http://schema.org/Number    
+        type: Property    
+        units: ' meters'    
+    financialOwner:    
+      description: 'Financial Owner'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    flagCode:    
+      description: 'International Flag Code (ISO 3166-1 alfa-2)'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    grossTonnage:    
+      description: 'Gross Tonnage (GT).'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+        units: ' moorson tons'    
+    heading:    
+      description: 'Heading of the Vessel (HDG).'    
+      maximum: 511    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+        units: ' degree'    
+    id:    
+      description: 'Unique identifier of the entity'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    imo:    
+      description: 'International Maritime Organization Number (a global forever UID)'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    length:    
+      description: 'Length of Vessel.'    
+      maximum: 8000    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+        units: ' meters'    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty.'    
+      properties:    
+        coordinates:    
+          items:    
+            type: number    
+          type: array    
+        type:    
+          type: string    
+      type: object    
+      x-ngsi:    
+        type: Geoproperty    
+    manager:    
+      description: 'Manager Vessel'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    maximumDraught:    
+      description: 'Maximum Draught.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+        units: ' meters'    
+    mmsi:    
+      description: 'Marine Mobile Service Identity Number (a temporarily assigned UID, issued by that object''s current flag state)'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    modifiedAt:    
+      description: 'Date and time of last modification of the entity represented by an ISO 8601 UTC format.'    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    name:    
+      description: 'Vessel Name'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    navigationStatus:    
+      description: 'Enum: ''0=Under way using engine,1=At anchor,2=Not under command,3=Restricted manoeuverability,4=Constrained by her draught,5=Moored,6=Aground,7=Engaged in Fishing,8=Under way sailing,9=Reserved for future amendment of Navigational Status for HSC,10=Reserved for future amendment of Navigational Status for WIG,11=Reserved for future use,12=Reserved for future use,13=Reserved for future use,14=AIS-SART is active,15=Not defined (default)''. Navigation Status. AIVDM/AIVDO data format.'    
+      enum:    
+        - 0    
+        - 1    
+        - 2    
+        - 3    
+        - 4    
+        - 5    
+        - 6    
+        - 7    
+        - 8    
+        - 9    
+        - 10    
+        - 11    
+        - 12    
+        - 13    
+        - 14    
+        - 15    
+      type: number    
+      x-ngsi:    
+        model: http://schema.org/Number    
+        type: Property    
+    observedAt:    
+      description: 'Date and time of this observation represented by an ISO 8601 UTC format.'    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    owner:    
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      items:    
+        anyOf:    
+          - description: 'Property. Identifier format of any NGSI entity'    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+          - description: 'Property. Identifier format of any NGSI entity'    
+            format: uri    
+            type: string    
+        description: 'Property. Unique identifier of the entity'    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    ownerVessel:    
+      description: 'Owner Vessel'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    photo:    
+      description: 'Vessel Photo URL'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    previousPort:    
+      description: 'Previous Port (Geographic coding scheme UN/LOCODE (United Nations Code for Trade and Transport Locations). https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    rateOfTurn:    
+      description: 'Rate of Turn (ROT).'    
+      maximum: 708    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+        units: ' degree'    
+    seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    speedOverGround:    
+      description: 'Speed Over Ground (SOG).'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+        units: ' meters per second'    
+    technicalManager:    
+      description: 'Technical Manager'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    toBow:    
+      description: 'Dimension to Bow.'    
+      type: number    
+      x-ngsi:    
+        model: http://schema.org/Number    
+        type: Property    
+        units: ' meters'    
+    toPort:    
+      description: 'Dimension to Port.'    
+      type: number    
+      x-ngsi:    
+        model: http://schema.org/Number    
+        type: Property    
+        units: ' meters'    
+    toStardboard:    
+      description: 'Dimension to Starboard.'    
+      type: number    
+      x-ngsi:    
+        model: http://schema.org/Number    
+        type: Property    
+        units: ' meters'    
+    toStern:    
+      description: 'Dimension to Stern.'    
+      type: number    
+      x-ngsi:    
+        model: http://schema.org/Number    
+        type: Property    
+        units: ' meters'    
+    type:    
+      description: 'NGSI Entity type. It has to be Vessel'    
+      enum:    
+        - Vessel    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    vesselSubType:    
+      description: 'Enum: ''0=Not available (default),1-19=Reserved for future use,20=Wing in ground (WIG), all ships of this type,21=Wing in ground (WIG), Hazardous category A,22=Wing in ground (WIG), Hazardous category B,23=Wing in ground (WIG), Hazardous category C,24=Wing in ground (WIG), Hazardous category D,25-29=Wing in ground (WIG), Reserved for future use,30=Fishing,31=Towing,32=Towing: length exceeds 200m or breadth exceeds 25m,33=Dredging or underwater ops,34=Diving ops,35=Military ops,36=Sailing,37=Pleasure Craft,38-39=Reserved,40=High speed craft (HSC), all ships of this type,41=High speed craft (HSC), Hazardous category A,42=High speed craft (HSC), Hazardous category B,43=High speed craft (HSC), Hazardous category C,44=High speed craft (HSC), Hazardous category D,45-48=High speed craft (HSC), Reserved for future use,49=High speed craft (HSC), No additional information,50=Pilot Vessel,51=Search and Rescue vessel,52=Tug,53=Port Tender,54=Anti-pollution equipment,55=Law Enforcement,56-57=Spare - Local Vessel,58=Medical Transport,59=Noncombatant ship according to RR Resolution No. 18,60=Passenger, all ships of this type,61=Passenger, Hazardous category A,62=Passenger, Hazardous category B,63=Passenger, Hazardous category C,64=Passenger, Hazardous category D,65-68=Passenger, Reserved for future use,69=Passenger, No additional information,70=Cargo, all ships of this type,71=Cargo, Hazardous category A,72=Cargo, Hazardous category B,73=Cargo, Hazardous category C,74=Cargo, Hazardous category D,75-78=Cargo, Reserved for future use,79=Cargo, No additional information,80=Tanker, all ships of this type,81=Tanker, Hazardous category A,82=Tanker, Hazardous category B,83=Tanker, Hazardous category C,84=Tanker, Hazardous category D,85-88=Tanker, Reserved for future use,89=Tanker, No additional information,90=Other Type, all ships of this type,91=Other Type, Hazardous category A,92=Other Type, Hazardous category B,93=Other Type, Hazardous category C,94=Other Type, Hazardous category D,95-98=Other Type, Reserved for future use,99=Other Type, no additional information''. Code for vessel Sub-Type'    
+      enum:    
+        - 1    
+        - 2    
+        - 3    
+        - 4    
+        - 5    
+        - 6    
+        - 7    
+        - 8    
+        - 9    
+        - 10    
+        - 11    
+        - 12    
+        - 13    
+        - 14    
+        - 15    
+        - 16    
+        - 17    
+        - 18    
+        - 19    
+        - 20    
+        - 21    
+        - 22    
+        - 23    
+        - 24    
+        - 25    
+        - 26    
+        - 27    
+        - 28    
+        - 29    
+        - 30    
+        - 31    
+        - 32    
+        - 33    
+        - 34    
+        - 35    
+        - 36    
+        - 37    
+        - 38    
+        - 39    
+        - 40    
+        - 41    
+        - 42    
+        - 43    
+        - 44    
+        - 45    
+        - 46    
+        - 47    
+        - 48    
+        - 49    
+        - 50    
+        - 51    
+        - 52    
+        - 53    
+        - 54    
+        - 55    
+        - 56    
+        - 57    
+        - 58    
+        - 59    
+        - 60    
+        - 61    
+        - 62    
+        - 63    
+        - 64    
+        - 65    
+        - 66    
+        - 67    
+        - 68    
+        - 69    
+        - 70    
+        - 71    
+        - 72    
+        - 73    
+        - 74    
+        - 75    
+        - 76    
+        - 77    
+        - 78    
+        - 79    
+        - 80    
+        - 81    
+        - 82    
+        - 83    
+        - 84    
+        - 85    
+        - 86    
+        - 87    
+        - 88    
+        - 89    
+        - 90    
+        - 91    
+        - 92    
+        - 93    
+        - 94    
+        - 95    
+        - 96    
+        - 97    
+        - 98    
+        - 99    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    vesselType:    
+      description: 'Enum: ''1=Reserved,2=Wing In Ground,3=Special Category,4=High-Speed Craft,5=Special Category,6=Passenger,7=Cargo,8=Tanker,9=Other''. Code for vessel type'    
+      enum:    
+        - 1    
+        - 2    
+        - 3    
+        - 4    
+        - 5    
+        - 6    
+        - 7    
+        - 8    
+        - 9    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+  required:    
+    - id    
+    - type    
+  type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Vessel/LICENSE.md    
+  x-model-schema: https://gitlab.com/hiades/fiware/smart-data-models/-/raw/main/dataModel.Vessel/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## ＃＃＃＃有效载荷的例子  
+#### 容器NGSI-v2关键值示例  
+这里是一个以JSON-LD格式作为key-values的Vessel的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:mrn:amura:vessel:test",  
+    "type": "Vessel",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -5.993307,  
+            37.362882  
+        ]  
+    },  
+    "imo": 9863637,  
+    "mmsi": 210049000,  
+    "callSign": "5BPC5",  
+    "name": "ELEANOR ROOSEVELT",  
+    "speedOverGround": 1,  
+    "courseOverGround": 1,  
+    "heading": 1,  
+    "rateOfTurn": 1,  
+    "createdAt": "2022-06-01T07:00:00.00Z",  
+    "modifiedAt": "2022-06-01T07:00:00.00Z",  
+    "observedAt": "2022-06-01T07:00:00.00Z",  
+    "flagCode": "CY",  
+    "vesselType": 1,  
+    "vesselSubType": 2,  
+    "grossTonnage": 12467,  
+    "beam": 7,  
+    "length": 32,  
+    "maximumDraught": 5,  
+    "deadweightTonnage": 8,  
+    "buildingAt": "2021-01-01T07:00:00.00Z",  
+    "toBow": 3,  
+    "toStern": 20,  
+    "toPort": 17,  
+    "toStardboard": 4,  
+    "navigationStatus": 4,  
+    "airDraught": 4,  
+    "draught": 4,  
+    "photo": "PHOTO URL",  
+    "ownerVessel": "OWNER NAME",  
+    "manager": "MANAGER NAME",  
+    "financialOwner": "FINANCIAL OWNER NAME",  
+    "technicalManager": "TECHNICAL MANAGER NAME",  
+    "dataProvider": "AIS",  
+    "destinationPort": "ESVLC",  
+    "previousPort": "ESPMI"  
+}  
+```  
+</details>  
+#### 容器NGSI-v2规范化示例  
+下面是一个以JSON-LD格式规范化的Vessel的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:mrn:amura:vessel:test",  
+    "type": "Vessel",  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -5.993307,  
+                37.362882  
+            ]  
+        }  
+    },  
+    "imo": {  
+        "type": "Number",  
+        "value": 9863637  
+    },  
+    "mmsi": {  
+        "type": "Number",  
+        "value": 210049000  
+    },  
+    "callSign": {  
+        "type": "Text",  
+        "value": "5BPC5"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "ELEANOR ROOSEVELT"  
+    },  
+    "speedOverGround": {  
+        "type": "Number",  
+        "value": 1  
+    },  
+    "courseOverGround": {  
+        "type": "Number",  
+        "value": 1  
+    },  
+    "heading": {  
+        "type": "Number",  
+        "value": 1  
+    },  
+    "rateOfTurn": {  
+        "type": "Number",  
+        "value": 1  
+    },  
+    "createdAt": {  
+        "type": "DateTime",  
+        "value": "2022-06-01T07:00:00.00Z"  
+    },  
+    "modifiedAt": {  
+        "type": "DateTime",  
+        "value": "2022-06-01T07:00:00.00Z"  
+    },  
+    "observedAt": {  
+        "type": "DateTime",  
+        "value": "2022-06-01T07:00:00.00Z"  
+    },  
+    "flagCode": {  
+        "type": "Text",  
+        "value": "CY"  
+    },  
+    "vesselType": {  
+        "type": "Number",  
+        "value": 1  
+    },  
+    "vesselSubType": {  
+        "type": "Number",  
+        "value": 2  
+    },  
+    "grossTonnage": {  
+        "type": "Number",  
+        "value": 12467  
+    },  
+    "beam": {  
+        "type": "Number",  
+        "value": 7  
+    },  
+    "length": {  
+        "type": "Number",  
+        "value": 32  
+    },  
+    "maximumDraught": {  
+        "type": "Number",  
+        "value": 5  
+    },  
+    "deadweightTonnage": {  
+        "type": "Number",  
+        "value": 8  
+    },  
+    "buildingAt": {  
+        "type": "DateTime",  
+        "value": "2021-01-01T07:00:00.00Z1"  
+    },  
+    "toBow": {  
+        "type": "Number",  
+        "value": 3  
+    },  
+    "toStern": {  
+        "type": "Number",  
+        "value": 20  
+    },  
+    "toPort": {  
+        "type": "Number",  
+        "value": 17  
+    },  
+    "toStardboard": {  
+        "type": "Number",  
+        "value": 4  
+    },  
+    "navigationStatus": {  
+        "type": "Number",  
+        "value": 4  
+    },  
+    "airDraught": {  
+        "type": "Number",  
+        "value": 4  
+    },  
+    "draught": {  
+        "type": "Number",  
+        "value": 4  
+    },  
+    "photo": {  
+        "type": "Text",  
+        "value": "URL PHOTO"  
+    },  
+    "ownerVessel": {  
+        "type": "Text",  
+        "value": "OWNER NAME"  
+    },  
+    "manager": {  
+        "type": "Text",  
+        "value": "MANAGER NAME"  
+    },  
+    "financialOwner": {  
+        "type": "Text",  
+        "value": "FINANCIAL OWNER NAME"  
+    },  
+    "technicalManager": {  
+        "type": "Text",  
+        "value": "TECHNICAL MANAGER NAME"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "AIS"  
+    },  
+    "destinationPort": {  
+        "type": "Text",  
+        "value": "ESVLC"  
+    },  
+    "previousPort": {  
+        "type": "Text",  
+        "value": "ESPMI"  
+    }  
+}  
+```  
+</details>  
+#### 容器NGSI-LD关键值示例  
+这里是一个以JSON-LD格式作为key-values的Vessel的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:mrn:amura:vessel:test",  
+    "type": "Vessel",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -5.993307,  
+            37.362882  
+        ]  
+    },  
+    "imo": 9863637,  
+    "mmsi": 210049000,  
+    "callSign": "5BPC5",  
+    "name": "ELEANOR ROOSEVELT",  
+    "speedOverGround": 1,  
+    "courseOverGround": 1,  
+    "heading": 1,  
+    "rateOfTurn": 1,  
+    "createdAt": "2022-06-01T07:00:00.00Z",  
+    "modifiedAt": "2022-06-01T07:00:00.00Z",  
+    "observedAt": "2022-06-01T07:00:00.00Z",  
+    "flagCode": "CY",  
+    "vesselType": 1,  
+    "vesselSubType": 2,  
+    "grossTonnage": 12467,  
+    "beam": 7,  
+    "length": 32,  
+    "maximumDraught": 5,  
+    "deadweightTonnage": 8,  
+    "buildingAt": "2021-01-01T07:00:00.00Z",  
+    "toBow": 3,  
+    "toStern": 20,  
+    "toPort": 17,  
+    "toStardboard": 4,  
+    "navigationStatus": 4,  
+    "airDraught": 4,  
+    "draught": 4,  
+    "photo": "PHOTO URL",  
+    "ownerVessel": "OWNER NAME",  
+    "manager": "MANAGER NAME",  
+    "financialOwner": "FINANCIAL OWNER NAME",  
+    "technicalManager": "TECHNICAL MANAGER NAME",  
+    "dataProvider": "AIS",  
+    "destinationPort": "ESVLC",  
+    "previousPort": "ESPMI",  
+    "@context": [  
+        "https://gitlab.com/hiades/fiware/smart-data-models/-/raw/main/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
+    ]  
+}  
+```  
+</details>  
+#### 容器NGSI-LD正常化的例子  
+下面是一个以JSON-LD格式规范化的Vessel的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:mrn:amura:vessel:test",  
+    "type": "Vessel",  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -5.993307,  
+                37.362882  
+            ]  
+        }  
+    },  
+    "imo": {  
+        "type": "Property",  
+        "value": 9863637  
+    },  
+    "mmsi": {  
+        "type": "Property",  
+        "value": 210049000  
+    },  
+    "callSign": {  
+        "type": "Property",  
+        "value": "5BPC5"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "ELEANOR ROOSEVELT"  
+    },  
+    "speedOverGround": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "courseOverGround": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "heading": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "rateOfTurn": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "createdAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2022-06-01T07:00:00.00Z"  
+        }  
+    },  
+    "modifiedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2022-06-01T07:00:00.00Z"  
+        }  
+    },  
+    "observedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2022-06-01T07:00:00.00Z"  
+        }  
+    },  
+    "flagCode": {  
+        "type": "Property",  
+        "value": "CY"  
+    },  
+    "vesselType": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "vesselSubType": {  
+        "type": "Property",  
+        "value": 2  
+    },  
+    "grossTonnage": {  
+        "type": "Property",  
+        "value": 12467  
+    },  
+    "beam": {  
+        "type": "Property",  
+        "value": 7  
+    },  
+    "length": {  
+        "type": "Property",  
+        "value": 32  
+    },  
+    "maximumDraught": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "deadweightTonnage": {  
+        "type": "Property",  
+        "value": 8  
+    },  
+    "buildingAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-01-01T07:00:00.00Z1"  
+        }  
+    },  
+    "toBow": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "toStern": {  
+        "type": "Property",  
+        "value": 20  
+    },  
+    "toPort": {  
+        "type": "Property",  
+        "value": 17  
+    },  
+    "toStardboard": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "navigationStatus": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "airDraught": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "draught": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "photo": {  
+        "type": "Property",  
+        "value": "URL PHOTO"  
+    },  
+    "ownerVessel": {  
+        "type": "Property",  
+        "value": "OWNER NAME"  
+    },  
+    "manager": {  
+        "type": "Property",  
+        "value": "MANAGER NAME"  
+    },  
+    "financialOwner": {  
+        "type": "Property",  
+        "value": "FINANCIAL OWNER NAME"  
+    },  
+    "technicalManager": {  
+        "type": "Property",  
+        "value": "TECHNICAL MANAGER NAME"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "AIS"  
+    },  
+    "destinationPort": {  
+        "type": "Property",  
+        "value": "ESVLC"  
+    },  
+    "previousPort": {  
+        "type": "Property",  
+        "value": "ESPMI"  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
+    ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
