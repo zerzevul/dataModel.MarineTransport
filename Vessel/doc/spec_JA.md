@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティ船舶  
-========  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.MarineTransport/blob/master/Vessel/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このデータモデルは船舶の情報を提供することを目的としている。各船舶の特性（静的、動的情報）を表現することができる**。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このデータモデルは、船舶に関する情報を提供することを目的としている。各船舶の特性（静的、動的情報）を表現することができる**。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `airDraught`: 空気吃水（船舶の最高点から喫水線までの距離）  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `beam`: 船舶のビーム  - `buildingAt`: ISO 8601 UTCフォーマットで表現された船舶の建造日および時刻。  - `callSign`: 海上コールサインとは、船舶に固有の識別子として割り当てられるコールサインのことです  - `courseOverGround`: Course Over Ground（COG）。  - `createdAt`: ISO 8601 UTCフォーマットで表されるエンティティの作成日時。  - `dataProvider`: 調和データ実体の提供者を特定する文字列  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `deadweightTonnage`: DWT（Deadweight Tonnage）。  - `description`: このアイテムの説明  - `destinationPort`: 仕向港（地理的コード体系 UN/LOCODE (United Nations Code for Trade and Transport Locations)。https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)  - `draught`: 喫水線と船底（キール）の垂直距離  - `financialOwner`: ファイナンシャルオーナー  - `flagCode`: 国際フラグコード（ISO 3166-1 alfa-2）  - `grossTonnage`: 総トン数（GT）。  - `heading`: ヘディング・オブ・ザ・ベッセル（HDG）。  - `id`: エンティティの一意な識別子  - `imo`: 国際海事機関番号（グローバルな永久UID）  - `length`: 船舶の長さ  - `location`: 項目への Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString または MultiPolygoProperty とすることができる。  - `manager`: マネージャー・ベッセル  - `maximumDraught`: 最大喫水。  - `mmsi`: かいじょうゆうびんばんごう  - `modifiedAt`: ISO 8601 UTCフォーマットで表されるエンティティの最終更新日時。  - `name`: 船舶名  - `navigationStatus`: Enum:0=エンジン使用中,1=停泊中,2=指揮下なし,3=操船制限中,4=喫水制限中,5=係留中,6=停泊中,7=漁業中,8=航海中,9=HSCの航行状態の将来の変更のために保存されます.14=ASCの航行状態の将来の変更のために保存されます,10=Reserved for future amendment of Navigational Status for WIG, 11=Reserved for future use, 12=Reserved for future use, 13=Reserved for future use, 14=AIS-SART is active, 15=Not defined (default)' となる。航行状況。AIVDM/AIVDOのデータフォーマット。  - `observedAt`: ISO 8601 UTCフォーマットで表現されたこの観測の日付と時刻。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `ownerVessel`: オーナー船  - `photo`: 船舶写真URL  - `previousPort`: 旧港（地理的コード体系 UN/LOCODE (United Nations Code for Trade and Transport Locations)。https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)  - `rateOfTurn`: ROT（Rate of Turn）。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `speedOverGround`: Speed Over Ground（SOG）。  - `technicalManager`: テクニカルマネージャー  - `toBow`: Dimension to Bow.  - `toPort`: ポートまでの寸法。  - `toStardboard`: スターボードまでの寸法。  - `toStern`: 寸法は船尾まで。  - `type`: NGSI Entityタイプ。Vesselである必要があります。  - `vesselSubType`: Enumです。'0=利用不可（デフォルト）,1-19=将来の使用のために保存,20=Wing in Ground (WIG), このタイプのすべての船,21=Wing in Ground (WIG), 危険カテゴリ A,22=Wing in Ground (WIG),危険物B,23=ウィングイングラウンド（WIG）,危険物C,24=ウィングイングラウンド（WIG）,危険物D,25-29=ウィングイングラウンド（WIG）、将来使用のために予約,30=フィッシング,31=トーイング,32=トーキング:長さ200m超または幅25m超,33=浚渫または水中作業,34=潜水作業,35=軍事作業,36=セーリング,37=プレジャー・クラフト,38-39=予備,40=高速艇(HSC), このタイプの全ての船舶,41=高速艇(HSC), 危険カテゴリA,42=高速艇(HSC), 危険カテゴリB,43=高速艇(HSC), 危険カテゴリC.の船艇(HSC), 危険カテゴリBの船(HSC),危険カテゴリBの船(HSC)、危険カテゴリDの船艇,危険カテゴリDの船艇の(HSC)の艇44=高速艇(HSC)、危険カテゴリD,45-48=高速艇(HSC)、将来の使用のために予約,49=高速艇(HSC)、追加情報なし,50=パイロット船、51=捜索救難船、52=タグ、53=ポートテンダー、54=防汚装置、55=法執行、56-57=予備-地方船、58=医療輸送、59=RR決議番号による非戦闘艦(Noncombatant Ship according to RR No. 18),60=乗客、61-72=乗客、70=乗客、80=乗客、80=乗客、80=乗客、80=乗客,80=予備船,80=予備船,80=予備船,80=船級品,80=船舶用,85=船舶用,85=船舶用18,60=旅客、このタイプの全ての船舶,61=旅客、危険カテゴリA,62=旅客、危険カテゴリB,63=旅客、危険カテゴリC,64=旅客、危険カテゴリD,65-68=旅客、将来の使用のために予約,69=旅客、追加情報なし。70=貨物、このタイプの全ての船舶,71=貨物、危険カテゴリA,72=貨物、危険カテゴリB,73=貨物、危険カテゴリC,74=貨物、危険カテゴリD,75-78=貨物、将来の使用のために予約,79=貨物、追加情報なし,80=タンカー,このタイプの全ての船舶、81=貨物、危険カテゴリC,74=貨物、将来の使用のために予約,90=貨物、追加情報なし、91=貨物、危険カテゴリC,74=貨物,90=貨物,90=タンクトップ,90=タンカー、このタイプの全ての船舶、82=貨物、危険カテゴリC81=タンカー、危険物カテゴリーA、82=タンカー、危険物カテゴリーB、83=タンカー、危険物カテゴリーC、84=タンカー、危険物カテゴリーD、85-88=タンカー、将来の使用のために予約、89=タンカー、追加情報なし、90=その他のタイプ,このタイプのすべての船舶、81=タンカー、危険物カテゴリーD、83=タンカー、危険物カテゴリーD、84=タンカー、追加の情報なし,このタイプのすべての船舶、88=タンカー、将来の使用のために予約、89=タンカー、追加の情報なし。91=その他型、危険物カテゴリーA、92=その他型、危険物カテゴリーB、93=その他型、危険物カテゴリーC、94=その他型、危険物カテゴリーD、95-98=その他型、将来の使用のために予約、99=その他型、追加情報なし'このタイプのすべての船舶。船舶のサブタイプのコード  - `vesselType`: Enum: '1=Reserved,2=Wing In Ground,3=Special Category,4=High-Speed Craft,5=Special Category,6=Passenger,7=Cargo,8=Tanker,9=Other' です。船舶の種類を表すコード    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `airDraught[number]`: 空気吃水（船舶の最高点から喫水線までの距離）  . Model: [http://schema.org/Number](http://schema.org/Number)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `beam[number]`: 船舶のビーム  . Model: [https://schema.org/Number](https://schema.org/Number)- `buildingAt[string]`: ISO 8601 UTCフォーマットで表現された船舶の建造日および時刻。  . Model: [https://schema.org/Text](https://schema.org/Text)- `callSign[string]`: 海上コールサインとは、船舶に固有の識別子として割り当てられるコールサインのことです  . Model: [https://schema.org/Text](https://schema.org/Text)- `courseOverGround[number]`: Course Over Ground（COG）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `createdAt[string]`: ISO 8601 UTCフォーマットで表されるエンティティの作成日時。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和データ実体の提供者を特定する文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `deadweightTonnage[number]`: DWT（Deadweight Tonnage）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: このアイテムの説明  - `destinationPort[string]`: 仕向港（地理的コード体系 UN/LOCODE (United Nations Code for Trade and Transport Locations)。https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)  . Model: [https://schema.org/Text](https://schema.org/Text)- `draught[number]`: 喫水線と船底（キール）の垂直距離  . Model: [http://schema.org/Number](http://schema.org/Number)- `financialOwner[string]`: ファイナンシャルオーナー  . Model: [https://schema.org/Text](https://schema.org/Text)- `flagCode[string]`: 国際フラグコード（ISO 3166-1 alfa-2）  . Model: [https://schema.org/Text](https://schema.org/Text)- `grossTonnage[number]`: 総トン数（GT）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `heading[number]`: ヘディング・オブ・ザ・ベッセル（HDG）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[string]`: エンティティの一意な識別子  - `imo[number]`: 国際海事機関番号（グローバルな永久UID）  . Model: [https://schema.org/Number](https://schema.org/Number)- `length[number]`: 船舶の長さ  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[object]`: 項目への Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString または MultiPolygoProperty とすることができる。  - `manager[string]`: マネージャー・ベッセル  . Model: [https://schema.org/Text](https://schema.org/Text)- `maximumDraught[number]`: 最大喫水。  . Model: [https://schema.org/Number](https://schema.org/Number)- `mmsi[number]`: かいじょうゆうびんばんごう  . Model: [https://schema.org/Number](https://schema.org/Number)- `modifiedAt[string]`: ISO 8601 UTCフォーマットで表されるエンティティの最終更新日時。  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: 船舶名  . Model: [https://schema.org/Text](https://schema.org/Text)- `navigationStatus[number]`: Enum:0=エンジン使用中,1=停泊中,2=指揮下なし,3=操船制限中,4=喫水制限中,5=係留中,6=停泊中,7=漁業中,8=航海中,9=HSCの航行状態の将来の変更のために保存されます.14=ASCの航行状態の将来の変更のために保存されます,10=Reserved for future amendment of Navigational Status for WIG, 11=Reserved for future use, 12=Reserved for future use, 13=Reserved for future use, 14=AIS-SART is active, 15=Not defined (default)' となる。航行状況。AIVDM/AIVDOのデータフォーマット。  . Model: [http://schema.org/Number](http://schema.org/Number)- `observedAt[string]`: ISO 8601 UTCフォーマットで表現されたこの観測の日付と時刻。  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `ownerVessel[string]`: オーナー船  . Model: [https://schema.org/Text](https://schema.org/Text)- `photo[string]`: 船舶写真URL  . Model: [https://schema.org/Text](https://schema.org/Text)- `previousPort[string]`: 旧港（地理的コード体系 UN/LOCODE (United Nations Code for Trade and Transport Locations)。https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)  . Model: [https://schema.org/Text](https://schema.org/Text)- `rateOfTurn[number]`: ROT（Rate of Turn）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `speedOverGround[number]`: Speed Over Ground（SOG）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `technicalManager[string]`: テクニカルマネージャー  . Model: [https://schema.org/Text](https://schema.org/Text)- `toBow[number]`: Dimension to Bow.  . Model: [http://schema.org/Number](http://schema.org/Number)- `toPort[number]`: ポートまでの寸法。  . Model: [http://schema.org/Number](http://schema.org/Number)- `toStardboard[number]`: スターボードまでの寸法。  . Model: [http://schema.org/Number](http://schema.org/Number)- `toStern[number]`: 寸法は船尾まで。  . Model: [http://schema.org/Number](http://schema.org/Number)- `type[string]`: NGSI Entityタイプ。Vesselである必要があります。  - `vesselSubType[number]`: Enumです。'0=利用不可(デフォルト),1-19=将来の使用のために保存,20=Wing in Ground (WIG), このタイプのすべての船,21=Wing in Ground (WIG), 危険カテゴリ A,22=Wing in Ground (WIG),危険物B,23=ウィングイングラウンド（WIG）,危険物C,24=ウィングイングラウンド（WIG）,危険物D,25-29=ウィングイングラウンド（WIG）、将来使用のために予約,30=フィッシング,31=トーイング,32=トーキング:長さ200m超または幅25m超,33=浚渫または水中作業,34=潜水作業,35=軍事作業,36=セーリング,37=プレジャー・クラフト,38-39=予備,40=高速艇(HSC), このタイプの全ての船舶,41=高速艇(HSC), 危険カテゴリA,42=高速艇(HSC), 危険カテゴリB,43=高速艇(HSC), 危険カテゴリC.の船艇(HSC), 危険カテゴリBの船(HSC),危険カテゴリBの船(HSC)、危険カテゴリDの船艇,危険カテゴリDの船艇の(HSC)の艇44=高速艇(HSC)、危険カテゴリD,45-48=高速艇(HSC)、将来の使用のために予約,49=高速艇(HSC)、追加情報なし,50=パイロット船、51=捜索救難船、52=タグ、53=ポートテンダー、54=防汚装置、55=法執行、56-57=予備-地方船、58=医療輸送、59=RR決議番号による非戦闘艦(Noncombatant Ship according to RR No. 18),60=乗客、61-72=乗客、70=乗客、80=乗客、80=乗客、80=乗客、80=乗客,80=予備船,80=予備船,80=予備船,80=船級品,80=船舶用,85=船舶用,85=船舶用18,60=旅客、このタイプの全ての船舶,61=旅客、危険カテゴリA,62=旅客、危険カテゴリB,63=旅客、危険カテゴリC,64=旅客、危険カテゴリD,65-68=旅客、将来の使用のために予約,69=旅客、追加情報なし。70=貨物、このタイプの全ての船舶,71=貨物、危険カテゴリA,72=貨物、危険カテゴリB,73=貨物、危険カテゴリC,74=貨物、危険カテゴリD,75-78=貨物、将来の使用のために予約,79=貨物、追加情報なし,80=タンカー,このタイプの全ての船舶、81=貨物、危険カテゴリC,74=貨物、将来の使用のために予約,90=貨物、追加情報なし、91=貨物、危険カテゴリC,74=貨物,90=貨物,90=タンクトップ,90=タンカー、このタイプの全ての船舶、82=貨物、危険カテゴリC81=タンカー、危険物カテゴリーA、82=タンカー、危険物カテゴリーB、83=タンカー、危険物カテゴリーC、84=タンカー、危険物カテゴリーD、85-88=タンカー、将来の使用のために予約、89=タンカー、追加情報なし、90=その他のタイプ,このタイプのすべての船舶、81=タンカー、危険物カテゴリーD、83=タンカー、危険物カテゴリーD、84=タンカー、追加の情報なし,このタイプのすべての船舶、88=タンカー、将来の使用のために予約、89=タンカー、追加の情報なし。91=その他型、危険物カテゴリーA、92=その他型、危険物カテゴリーB、93=その他型、危険物カテゴリーC、94=その他型、危険物カテゴリーD、95-98=その他型、将来の使用のために予約、99=その他型、追加情報なし'このタイプのすべての船舶。船舶のサブタイプのコード  . Model: [https://schema.org/Number](https://schema.org/Number)- `vesselType[number]`: Enum: '1=Reserved,2=Wing In Ground,3=Special Category,4=High-Speed Craft,5=Special Category,6=Passenger,7=Cargo,8=Tanker,9=Other' です。船舶の種類を表すコード  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`  ## プロパティのデータモデル記述  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Vessel:    
@@ -503,9 +517,14 @@ Vessel:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### Vessel NGSI-v2 key-value の例。  
 ここでは、VesselをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:mrn:amura:vessel:test",  
@@ -554,8 +573,10 @@ Vessel:
     "previousPort": "ESPMI"  
 }  
 ```  
+</details>  
 #### 容器 NGSI-v2 正規化例  
 VesselをJSON-LDフォーマットで正規化した例を示します。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:mrn:amura:vessel:test",  
@@ -712,8 +733,10 @@ Vessel:
     }  
 }  
 ```  
+</details>  
 #### 容器NGSI-LDのキー値例  
 ここでは、VesselをJSON-LD形式でkey-valuesにした例を示します。これは`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:mrn:amura:vessel:test",  
@@ -761,12 +784,15 @@ Vessel:
     "destinationPort": "ESVLC",  
     "previousPort": "ESPMI",  
     "@context": [  
-        "https://gitlab.com/hiades/fiware/smart-data-models/-/raw/main/context.jsonld"  
+        "https://gitlab.com/hiades/fiware/smart-data-models/-/raw/main/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
     ]  
 }  
 ```  
+</details>  
 #### NGSI-LD規格化例  
 VesselをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:mrn:amura:vessel:test",  
@@ -938,4 +964,12 @@ Vessel:
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
