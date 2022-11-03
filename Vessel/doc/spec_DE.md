@@ -212,7 +212,7 @@ Vessel:
           type: string    
       type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     manager:    
       description: 'Manager Vessel'    
       type: string    
