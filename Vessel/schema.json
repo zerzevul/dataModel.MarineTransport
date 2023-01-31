@@ -330,11 +330,6 @@
           "format": "date-time",
           "description": "Property. Model:'https://schema.org/Text'. Estimated time of arrival, as it was originally planned and entered by the shipper, represented by an ISO 8601 UTC format."
         },
-        "calculatedTimeOfArrival": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/Text'. ECalculated time of arrival, as it was calculated by a system given the current location, represented by an ISO 8601 UTC format."
-        },
         "positionAccuracy": {
           "type": "number",
           "enum": [
