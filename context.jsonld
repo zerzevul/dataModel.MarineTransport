@@ -56,6 +56,10 @@
         "toStern": "https://smartdatamodels.org/dataModel.MarineTransport/toStern",
         "type": "@type",
         "vesselSubType": "https://smartdatamodels.org/dataModel.MarineTransport/vesselSubType",
-        "vesselType": "https://smartdatamodels.org/dataModel.MarineTransport/vesselType"
+        "vesselType": "https://smartdatamodels.org/dataModel.MarineTransport/vesselType",
+        "estimatedTimeOfArrival": "https://smartdatamodels.org/dataModel.MarineTransport/estimatedTimeOfArrival",
+        "calculatedTimeOfArrival": "https://smartdatamodels.org/dataModel.MarineTransport/calculatedTimeOfArrival",
+        "positionAccuracy": "https://smartdatamodels.org/dataModel.MarineTransport/positionAccuracy",
+        "specialManeuverIndicator": "https://smartdatamodels.org/dataModel.MarineTransport/specialManeuverIndicator"
     }
 }

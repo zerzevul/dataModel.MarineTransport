@@ -324,6 +324,33 @@
         "previousPort": {
           "type": "string",
           "description": "Property. Model:'https://schema.org/Text'. Previous Port (Geographic coding scheme UN/LOCODE (United Nations Code for Trade and Transport Locations). https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)"
+        },
+        "estimatedTimeOfArrival": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Text'. Estimated time of arrival, as it was originally planned and entered by the shipper, represented by an ISO 8601 UTC format."
+        },
+        "calculatedTimeOfArrival": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Text'. ECalculated time of arrival, as it was calculated by a system given the current location, represented by an ISO 8601 UTC format."
+        },
+        "positionAccuracy": {
+          "type": "number",
+          "enum": [
+            0,
+            1
+          ],
+          "description": "Property. Model:'https://schema.org/Number'.Enum: '0=Low (> 10 m; autonomous mode of e.g. global navigation satellite system (GNSS) receiver or of other electronic position fixing device; default),1=High (< 10 m; differential mode of e.g. DGNSS receiver)'. Code for the accuracy of the vessel position flag."
+        },
+        "specialManeuverIndicator": {
+          "type": "number",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "Property. Model:'https://schema.org/Number'. Enum: '0=Not available (default),1=Not engaged in special maneuver,2=Engaged in special maneuver'. Code for the special maneuver flag."
         }
       }
     }

@@ -43,6 +43,10 @@
     "dataProvider": "AIS",
     "destinationPort": "ESVLC",
     "previousPort": "ESPMI",
+    "estimatedTimeOfArrival": "2023-03-01T07:00:00.00Z",
+    "calculatedTimeOfArrival": "2023-03-02T07:00:00.00Z",
+    "positionAccuracy": 0,
+    "specialManeuverIndicator": 1,
     "@context": [
         "https://gitlab.com/hiades/fiware/smart-data-models/-/raw/main/context.jsonld",
         "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"
