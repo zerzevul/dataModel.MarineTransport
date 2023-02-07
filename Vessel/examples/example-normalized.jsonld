@@ -163,6 +163,21 @@
         "type": "Property",
         "value": "ESPMI"
     },
+    "estimatedTimeOfArrival": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2023-03-01T07:00:00.00Z"
+        }
+    },
+    "positionAccuracy": {
+        "type": "Property",
+        "value": 0
+    },
+    "specialManeuverIndicator": {
+        "type": "Property",
+        "value": 1
+    },
     "@context": [
         "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"
     ]

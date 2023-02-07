@@ -475,6 +475,32 @@ Vessel:
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+    estimatedTimeOfArrival:
+      description: 'Estimated time of arrival, as it was originally planned and entered by the shipper.'
+      type: string
+      format: date-time
+      x-ngsi:
+          model: https://schema.org/DateTime
+          type: Property
+    positionAccuracy:
+      description: 'Enum: ''0=Low (> 10 m; autonomous mode of e.g. global navigation satellite system (GNSS) receiver or of other electronic position fixing device; default),1=High (< 10 m; differential mode of e.g. DGNSS receiver)''. Code for accuracy of the vessel position flag.'
+      enum:
+        - 0
+        - 1
+      type: number
+      x-ngsi:
+          model: https://schema.org/Number
+          type: Property
+    specialManeuverIndicator:
+      description: 'Enum: ''0=Not available (default),1=Not engaged in special maneuver,2=Engaged in special maneuver''. Code for special maneuver flag.'
+      enum:
+        - 0
+        - 1
+        - 2
+      type: number
+      x-ngsi:
+          model: https://schema.org/Number
+          type: Property
   required:
     - id
     - type

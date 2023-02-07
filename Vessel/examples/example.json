@@ -42,5 +42,9 @@
     "technicalManager": "TECHNICAL MANAGER NAME",
     "dataProvider": "AIS",
     "destinationPort": "ESVLC",
-    "previousPort": "ESPMI"
+    "previousPort": "ESPMI",
+    "estimatedTimeOfArrival": "2023-03-01T07:00:00.00Z",
+    "calculatedTimeOfArrival": "2023-03-02T07:00:00.00Z",
+    "positionAccuracy": 0,
+    "specialManeuverIndicator": 1
 }

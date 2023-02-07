@@ -150,5 +150,17 @@
     "previousPort": {
         "type": "Text",
         "value": "ESPMI"
+    },
+    "estimatedTimeOfArrival": {
+        "type": "DateTime",
+        "value": "2023-03-01T07:00:00.00Z"
+    },
+    "positionAccuracy": {
+        "type": "Number",
+        "value": 0
+    },
+    "specialManeuverIndicator": {
+        "type": "Number",
+        "value": 1
     }
 }
