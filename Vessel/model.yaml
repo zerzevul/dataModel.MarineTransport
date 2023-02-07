@@ -2,7 +2,7 @@ Vessel:
   description: 'The data model is intended to provide information about vessels. It allows to represent the properties of each vessel: static and dynamic information'
   properties:
     address:
-      description: 'The mailing address'
+      description: The mailing address
       properties:
         addressCountry:
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
@@ -13,6 +13,9 @@ Vessel:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
+        district:
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -22,30 +25,33 @@ Vessel:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
+        streetNr:
+          description: Number identifying a specific property on a public street.
+          type: string
       type: object
       x-ngsi:
         model: https://schema.org/address
         type: Property
     airDraught:
-      description: 'Air Draught (distance from the top of a vessel''''s highest point to its waterline)'
+      description: Air Draught (distance from the top of a vessel''s highest point to its waterline)
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: ' meters'
     alternateName:
-      description: 'An alternative name for this item'
+      description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
     areaServed:
-      description: 'The geographic area where a service or offered item is provided'
+      description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     beam:
-      description: 'Beam of Vessel.'
+      description: Beam of Vessel.
       maximum: 1000
       minimum: 0
       type: number
@@ -54,59 +60,59 @@ Vessel:
         type: Property
         units: ' meters'
     buildingAt:
-      description: 'Date and time of building of the vessel represented by an ISO 8601 UTC format.'
+      description: Date and time of building of the vessel represented by an ISO 8601 UTC format.
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     callSign:
-      description: 'Maritime call signs are call signs assigned as unique identifiers to vessels'
+      description: Maritime call signs are call signs assigned as unique identifiers to vessels
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     courseOverGround:
-      description: 'Course Over Ground (COG).'
+      description: Course Over Ground (COG).
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: ' degree'
     createdAt:
-      description: 'Date and time of creation of the entity represented by an ISO 8601 UTC format.'
+      description: Date and time of creation of the entity represented by an ISO 8601 UTC format.
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity'
+      description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     deadweightTonnage:
-      description: 'Deadweight Tonnage (DWT).'
+      description: Deadweight Tonnage (DWT).
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: ' tons'
     description:
-      description: 'A description of this item'
+      description: A description of this item
       type: string
       x-ngsi:
         type: Property
@@ -117,33 +123,40 @@ Vessel:
         model: https://schema.org/Text
         type: Property
     draught:
-      description: 'Draught (vertical distance between the waterline and the bottom of the hull (keel))'
+      description: Draught (vertical distance between the waterline and the bottom of the hull (keel))
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: ' meters'
+    estimatedTimeOfArrival:
+      description: 'Estimated time of arrival, as it was originally planned and entered by the shipper, represented by an ISO 8601 UTC format.'
+      format: date-time
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
     financialOwner:
-      description: 'Financial Owner'
+      description: Financial Owner
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     flagCode:
-      description: 'International Flag Code (ISO 3166-1 alfa-2)'
+      description: International Flag Code (ISO 3166-1 alfa-2)
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     grossTonnage:
-      description: 'Gross Tonnage (GT).'
+      description: Gross Tonnage (GT).
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: ' moorson tons'
     heading:
-      description: 'Heading of the Vessel (HDG).'
+      description: Heading of the Vessel (HDG).
       maximum: 511
       minimum: 0
       type: number
@@ -152,18 +165,18 @@ Vessel:
         type: Property
         units: ' degree'
     id:
-      description: 'Unique identifier of the entity'
+      description: Unique identifier of the entity
       type: string
       x-ngsi:
         type: Property
     imo:
-      description: 'International Maritime Organization Number (a global forever UID)'
+      description: International Maritime Organization Number (a global forever UID)
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
     length:
-      description: 'Length of Vessel.'
+      description: Length of Vessel.
       maximum: 8000
       minimum: 0
       type: number
@@ -184,13 +197,13 @@ Vessel:
       x-ngsi:
         type: Geoproperty
     manager:
-      description: 'Manager Vessel'
+      description: Manager Vessel
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     maximumDraught:
-      description: 'Maximum Draught.'
+      description: Maximum Draught.
       type: number
       x-ngsi:
         model: https://schema.org/Number
@@ -203,14 +216,14 @@ Vessel:
         model: https://schema.org/Number
         type: Property
     modifiedAt:
-      description: 'Date and time of last modification of the entity represented by an ISO 8601 UTC format.'
+      description: Date and time of last modification of the entity represented by an ISO 8601 UTC format.
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     name:
-      description: 'Vessel Name'
+      description: Vessel Name
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -239,39 +252,48 @@ Vessel:
         model: http://schema.org/Number
         type: Property
     observedAt:
-      description: 'Date and time of this observation represented by an ISO 8601 UTC format.'
+      description: Date and time of this observation represented by an ISO 8601 UTC format.
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
         anyOf:
-          - description: 'Property. Identifier format of any NGSI entity'
+          - description: Property. Identifier format of any NGSI entity
             maxLength: 256
             minLength: 1
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
             type: string
-          - description: 'Property. Identifier format of any NGSI entity'
+          - description: Property. Identifier format of any NGSI entity
             format: uri
             type: string
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
         type: Property
     ownerVessel:
-      description: 'Owner Vessel'
+      description: Owner Vessel
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     photo:
-      description: 'Vessel Photo URL'
+      description: Vessel Photo URL
       type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
+    positionAccuracy:
+      description: 'global navigation satellite system (GNSS) receiver or of other electronic position fixing device; default),1=High (< 10 m; differential mode of e.g. DGNSS receiver)''. Code for the accuracy of the vessel position flag.'
+      enum:
+        - 0
+        - 1
+      type: number
+      x-ngsi:
+        model: 'https://schema.org/Number.Enum: 0=Low (> 10 m; autonomous mode of e.g'
         type: Property
     previousPort:
       description: 'Previous Port (Geographic coding scheme UN/LOCODE (United Nations Code for Trade and Transport Locations). https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)'
@@ -280,7 +302,7 @@ Vessel:
         model: https://schema.org/Text
         type: Property
     rateOfTurn:
-      description: 'Rate of Turn (ROT).'
+      description: Rate of Turn (ROT).
       maximum: 708
       minimum: 0
       type: number
@@ -289,7 +311,7 @@ Vessel:
         type: Property
         units: ' degree'
     seeAlso:
-      description: 'list of uri pointing to additional resources about the item'
+      description: list of uri pointing to additional resources about the item
       oneOf:
         - items:
             format: uri
@@ -305,49 +327,59 @@ Vessel:
       type: string
       x-ngsi:
         type: Property
+    specialManeuverIndicator:
+      description: 'Enum: ''0=Not available (default),1=Not engaged in special maneuver,2=Engaged in special maneuver''. Code for the special maneuver flag.'
+      enum:
+        - 0
+        - 1
+        - 2
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
     speedOverGround:
-      description: 'Speed Over Ground (SOG).'
+      description: Speed Over Ground (SOG).
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: ' meters per second'
     technicalManager:
-      description: 'Technical Manager'
+      description: Technical Manager
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     toBow:
-      description: 'Dimension to Bow.'
+      description: Dimension to Bow.
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: ' meters'
     toPort:
-      description: 'Dimension to Port.'
+      description: Dimension to Port.
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: ' meters'
     toStardboard:
-      description: 'Dimension to Starboard.'
+      description: Dimension to Starboard.
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: ' meters'
     toStern:
-      description: 'Dimension to Stern.'
+      description: Dimension to Stern.
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: ' meters'
     type:
-      description: 'NGSI Entity type. It has to be Vessel'
+      description: NGSI Entity type. It has to be Vessel
       enum:
         - Vessel
       type: string
@@ -475,32 +507,6 @@ Vessel:
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-    estimatedTimeOfArrival:
-      description: 'Estimated time of arrival, as it was originally planned and entered by the shipper.'
-      type: string
-      format: date-time
-      x-ngsi:
-          model: https://schema.org/DateTime
-          type: Property
-    positionAccuracy:
-      description: 'Enum: ''0=Low (> 10 m; autonomous mode of e.g. global navigation satellite system (GNSS) receiver or of other electronic position fixing device; default),1=High (< 10 m; differential mode of e.g. DGNSS receiver)''. Code for accuracy of the vessel position flag.'
-      enum:
-        - 0
-        - 1
-      type: number
-      x-ngsi:
-          model: https://schema.org/Number
-          type: Property
-    specialManeuverIndicator:
-      description: 'Enum: ''0=Not available (default),1=Not engaged in special maneuver,2=Engaged in special maneuver''. Code for special maneuver flag.'
-      enum:
-        - 0
-        - 1
-        - 2
-      type: number
-      x-ngsi:
-          model: https://schema.org/Number
-          type: Property
   required:
     - id
     - type
@@ -508,6 +514,6 @@ Vessel:
   x-derived-from: ""
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Vessel/LICENSE.md
-  x-model-schema: https://gitlab.com/hiades/fiware/smart-data-models/-/raw/main/dataModel.Vessel/schema.json
-  x-model-tags: ""
-  x-version: 0.0.1
+  x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/Vessel/schema.json
+  x-model-tags: I4Trust
+  x-version: 0.0.2
