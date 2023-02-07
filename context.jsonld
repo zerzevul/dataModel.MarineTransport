@@ -19,6 +19,7 @@
         "description": "http://purl.org/dc/terms/description",
         "destinationPort": "https://smartdatamodels.org/dataModel.MarineTransport/destinationPort",
         "draught": "https://smartdatamodels.org/dataModel.MarineTransport/draught",
+        "estimatedTimeOfArrival": "https://smartdatamodels.org/dataModel.MarineTransport/estimatedTimeOfArrival",
         "financialOwner": "https://smartdatamodels.org/dataModel.MarineTransport/financialOwner",
         "flagCode": "https://smartdatamodels.org/dataModel.MarineTransport/flagCode",
         "grossTonnage": "https://smartdatamodels.org/dataModel.MarineTransport/grossTonnage",
@@ -44,10 +45,12 @@
         "owner": "https://smartdatamodels.org/owner",
         "ownerVessel": "https://smartdatamodels.org/dataModel.MarineTransport/ownerVessel",
         "photo": "https://smartdatamodels.org/dataModel.MarineTransport/photo",
+        "positionAccuracy": "https://smartdatamodels.org/dataModel.MarineTransport/positionAccuracy",
         "previousPort": "https://smartdatamodels.org/dataModel.MarineTransport/previousPort",
         "rateOfTurn": "https://smartdatamodels.org/dataModel.MarineTransport/rateOfTurn",
         "seeAlso": "https://smartdatamodels.org/seeAlso",
         "source": "https://smartdatamodels.org/source",
+        "specialManeuverIndicator": "https://smartdatamodels.org/dataModel.MarineTransport/specialManeuverIndicator",
         "speedOverGround": "https://smartdatamodels.org/dataModel.MarineTransport/speedOverGround",
         "technicalManager": "https://smartdatamodels.org/dataModel.MarineTransport/technicalManager",
         "toBow": "https://smartdatamodels.org/dataModel.MarineTransport/toBow",
@@ -56,10 +59,6 @@
         "toStern": "https://smartdatamodels.org/dataModel.MarineTransport/toStern",
         "type": "@type",
         "vesselSubType": "https://smartdatamodels.org/dataModel.MarineTransport/vesselSubType",
-        "vesselType": "https://smartdatamodels.org/dataModel.MarineTransport/vesselType",
-        "estimatedTimeOfArrival": "https://smartdatamodels.org/dataModel.MarineTransport/estimatedTimeOfArrival",
-        "calculatedTimeOfArrival": "https://smartdatamodels.org/dataModel.MarineTransport/calculatedTimeOfArrival",
-        "positionAccuracy": "https://smartdatamodels.org/dataModel.MarineTransport/positionAccuracy",
-        "specialManeuverIndicator": "https://smartdatamodels.org/dataModel.MarineTransport/specialManeuverIndicator"
+        "vesselType": "https://smartdatamodels.org/dataModel.MarineTransport/vesselType"
     }
 }
