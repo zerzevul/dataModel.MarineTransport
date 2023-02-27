@@ -3,6 +3,10 @@
 ### List of data models
 
 The following entity types are available:
+- [Port](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Port/README.md). The data model is intended to provide information about ports
+
+- [PortAuthority](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortAuthority/README.md). The data model is intended to provide information about Port Authorities
+
 - [Vessel](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Vessel/README.md). The data model is intended to provide information about vessels. It allows to represent the properties of each vessel: static and dynamic information
 
 
