@@ -1,7 +1,7 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
-- name: "Salom\xE9"
-  surname: "Gonz\xE1lez"
+- name: "Salome"
+  surname: "Gonzalez"
   mail: sgonzalez@hiades.es
   organization: HIADES BUSINESS PATTERNS SL
   project: iGreenPort  (i4Trust Program) and others
