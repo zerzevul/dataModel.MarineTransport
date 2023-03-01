@@ -148,7 +148,7 @@ Port:
       x-ngsi:
         type: Property
     location:
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+      description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
         - description: Geoproperty. Geojson reference to the item. Point
           properties:
@@ -298,8 +298,6 @@ Port:
             - coordinates
           title: GeoJSON MultiPolygon
           type: object
-      x-ngsi:
-        type: Geoproperty
     name:
       description: The name of this item.
       type: string
@@ -314,7 +312,7 @@ Port:
       x-ngsi:
         type: Property
     portArea:
-      description: GeoProperty. Geojson reference to the item. It can be Polygon or MultiPolygon.
+      description: Geojson reference to the item. It can be Polygon or MultiPolygon.
       oneOf:
         - $id: https://geojson.org/schema/Polygon.json
           $schema: "http://json-schema.org/draft-07/schema#"
@@ -372,6 +370,8 @@ Port:
             - coordinates
           title: GeoJSON MultiPolygon
           type: object
+      x-ngsi:
+        type: GeoProperty
     portType:
       description: 'Enum: ''Sea, Inland, Fishing, WarmWater, Dry''. Classification by type of port.'
       enum:
