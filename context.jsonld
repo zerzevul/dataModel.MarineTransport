@@ -1,8 +1,5 @@
 {
     "@context": {
-        "Port": "https://smartdatamodels.org/dataModel.MarineTransport/Port",
-        "PortAuthority": "https://smartdatamodels.org/dataModel.MarineTransport/PortAuthority",
-        "Vessel": "https://smartdatamodels.org/dataModel.MarineTransport/Vessel",
         "address": "https://smartdatamodels.org/address",
         "airDraught": "https://smartdatamodels.org/dataModel.MarineTransport/airDraught",
         "alternateName": "https://smartdatamodels.org/alternateName",
