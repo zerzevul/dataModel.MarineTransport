@@ -1,0 +1,67 @@
+{
+  "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",
+  "type": "Booking",
+  "actualWindowFrom": {
+    "type": "Property",
+    "value": 645
+  },
+  "actualWindowTo": {
+    "type": "Property",
+    "value": 960
+  },
+  "bookingDate": {
+    "type": "Property",
+    "value": "20220621"
+  },
+  "bookingProperty": {
+    "type": "Property",
+    "value": "463589473290389"
+  },
+  "bookingStatus": {
+    "type": "Property",
+    "value": "Pending"
+  },
+  "company": {
+    "type": "Property",
+    "value": "Pantelis Bouratsis"
+  },
+  "containersExport": {
+    "type": "Property",
+    "value": 0
+  },
+  "containersImport": {
+    "type": "Property",
+    "value": 1
+  },
+  "exportContainer1": {
+    "type": "Property",
+    "value": ""
+  },
+  "exportContainer2": {
+    "type": "Property",
+    "value": ""
+  },
+  "importContainer1": {
+    "type": "Property",
+    "value": "ZCSU7627029"
+  },
+  "importContainer2": {
+    "type": "Property",
+    "value": ""
+  },
+  "originalWindowFrom": {
+    "type": "Property",
+    "value": 660
+  },
+  "originalWindowTo": {
+    "type": "Property",
+    "value": 720
+  },
+  "windowDate": {
+    "type": "Property",
+    "value": "20220621"
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"
+  ]
+}
