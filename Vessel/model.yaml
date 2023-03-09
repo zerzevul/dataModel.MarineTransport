@@ -185,7 +185,7 @@ Vessel:
         type: Property
         units: ' meters'
     location:
-      description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty.'
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty.'
       properties:
         coordinates:
           items:
@@ -194,6 +194,8 @@ Vessel:
         type:
           type: string
       type: object
+      x-ngsi:
+        type: GeoProperty
     manager:
       description: Manager Vessel
       type: string
