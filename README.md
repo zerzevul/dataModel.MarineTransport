@@ -3,6 +3,8 @@
 ### List of data models
 
 The following entity types are available:
+- [Booking](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Booking/README.md). Provide the bookings electronic messaging description
+
 - [Port](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Port/README.md). The data model is intended to provide information about ports
 
 - [PortAuthority](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortAuthority/README.md). The data model is intended to provide information about Port Authorities
