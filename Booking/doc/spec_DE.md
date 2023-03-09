@@ -14,7 +14,8 @@
 
 ## Liste der Eigenschaften  
 
-- `actualWindowFrom`: Tatsächlich genutztes Zeitfenster, wenn die Ankunft 15' früher erfolgte  - `actualWindowTo`: Tatsächlich genutztes Zeitfenster  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bookingDate`: Buchungsdatum  - `bookingNumber`: Eindeutige ID der Buchung  - `bookingStatus`: Buchungsstatus  - `company`: Unternehmen, das die Buchung vornimmt  - `containersExport`: Anzahl der Container, die vom KV-Hof abgeholt werden sollen  - `containersImport`: Anzahl der Container, die beim KV-Hof abzuliefern sind  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `enterDate`: Tatsächlicher Zeitpunkt der Einreise  - `exportContainer1`: Eindeutige Container-ID für den 1. abzuholenden Container  - `exportContainer2`: Eindeutige Container-ID für den 2. abzuholenden Container  - `id`: Eindeutiger Bezeichner der Entität  - `importContainer1`: Eindeutige Container-ID für den 1. abzuliefernden Container  - `importContainer2`: Eindeutige Container-ID für den 2. abzugebenden Container  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `originalWindowFrom`: Ursprünglich gebuchtes Zeitfenster für die Einreise  - `originalWindowTo`: Ursprünglich geschätztes Zeitfenster für die Abreise  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `windowDate`: Datum des Zeitfensters  <!-- /30-PropertiesList -->  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `actualWindowFrom[number]`: Tatsächlich genutztes Zeitfenster, wenn die Ankunft 15' früher erfolgte  - `actualWindowTo[number]`: Tatsächlich genutztes Zeitfenster  - `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `bookingDate[number]`: Buchungsdatum  - `bookingNumber[number]`: Eindeutige ID der Buchung  - `bookingStatus[string]`: Buchungsstatus  - `company[string]`: Unternehmen, das die Buchung vornimmt  - `containersExport[number]`: Anzahl der Container, die vom KV-Hof abgeholt werden sollen  - `containersImport[number]`: Anzahl der Container, die beim KV-Hof abzuliefern sind  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `enterDate[number]`: Tatsächlicher Zeitpunkt der Einreise  - `exportContainer1[string]`: Eindeutige Container-ID für den 1. abzuholenden Container  - `exportContainer2[string]`: Eindeutige Container-ID für den 2. abzuholenden Container  - `id[*]`: Eindeutiger Bezeichner der Entität  - `importContainer1[string]`: Eindeutige Container-ID für den 1. abzuliefernden Container  - `importContainer2[string]`: Eindeutige Container-ID für den 2. abzugebenden Container  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `originalWindowFrom[number]`: Ursprünglich gebuchtes Zeitfenster für die Einreise  - `originalWindowTo[number]`: Ursprünglich geschätztes Zeitfenster für die Abreise  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `windowDate[number]`: Datum des Zeitfensters  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -400,6 +401,7 @@ Booking:
 ## Beispiel-Nutzlasten  
 #### Buchung von NGSI-v2-Schlüsselwerten Beispiel  
 Hier ist ein Beispiel für eine Buchung im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",  
@@ -422,8 +424,10 @@ Booking:
   "importContainer2": ""  
 }  
 ```  
+</details>  
 #### Buchung NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für eine Buchung im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",  
@@ -505,8 +509,10 @@ Booking:
   }  
 }  
 ```  
+</details>  
 #### Buchung von NGSI-LD-Schlüsselwerten Beispiel  
 Hier ist ein Beispiel für eine Buchung im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",  
@@ -532,8 +538,10 @@ Booking:
   ]  
 }  
 ```  
+</details>  
 #### Buchung NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für eine Buchung im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",  
@@ -603,9 +611,12 @@ Booking:
   ]  
 }  
 ```  
-<!-- /80-Examples -->  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
 <!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
