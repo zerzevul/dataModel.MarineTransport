@@ -14,7 +14,8 @@
 
 ## List of properties  
 
-- `actualWindowFrom`: Time window actually used, if arrival was 15’ earlier  - `actualWindowTo`: Time window actually used  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bookingDate`: Booking date  - `bookingNumber`: Unique ID of the booking  - `bookingStatus`: Booking status  - `company`: Company making the booking  - `containersExport`: Number of containers to pick-up from the CT yard  - `containersImport`: Number of containers to drop-off to the CT yard  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `enterDate`: Actual time of entering  - `exportContainer1`: Unique container ID for 1st container to be picked-up  - `exportContainer2`: Unique container ID for 2nd container to be picked-up  - `id`: Unique identifier of the entity  - `importContainer1`: Unique container ID for 1st container to be dropped-off  - `importContainer2`: Unique container ID for 2nd container to be dropped-off  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `originalWindowFrom`: Originally booked time window to enter  - `originalWindowTo`: Originally estimated time window to leave  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `windowDate`: Date of the time window  <!-- /30-PropertiesList -->  
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `actualWindowFrom[number]`: Time window actually used, if arrival was 15’ earlier  - `actualWindowTo[number]`: Time window actually used  - `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `bookingDate[number]`: Booking date  - `bookingNumber[number]`: Unique ID of the booking  - `bookingStatus[string]`: Booking status  - `company[string]`: Company making the booking  - `containersExport[number]`: Number of containers to pick-up from the CT yard  - `containersImport[number]`: Number of containers to drop-off to the CT yard  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `enterDate[number]`: Actual time of entering  - `exportContainer1[string]`: Unique container ID for 1st container to be picked-up  - `exportContainer2[string]`: Unique container ID for 2nd container to be picked-up  - `id[*]`: Unique identifier of the entity  - `importContainer1[string]`: Unique container ID for 1st container to be dropped-off  - `importContainer2[string]`: Unique container ID for 2nd container to be dropped-off  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `originalWindowFrom[number]`: Originally booked time window to enter  - `originalWindowTo[number]`: Originally estimated time window to leave  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `windowDate[number]`: Date of the time window  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -400,6 +401,7 @@ Booking:
 ## Example payloads    
 #### Booking NGSI-v2 key-values Example    
 Here is an example of a Booking in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",  
@@ -422,8 +424,10 @@ Booking:
   "importContainer2": ""  
 }  
 ```  
+</details>  
 #### Booking NGSI-v2 normalized Example    
 Here is an example of a Booking in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",  
@@ -505,8 +509,10 @@ Booking:
   }  
 }  
 ```  
+</details>  
 #### Booking NGSI-LD key-values Example    
 Here is an example of a Booking in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",  
@@ -532,8 +538,10 @@ Booking:
   ]  
 }  
 ```  
+</details>  
 #### Booking NGSI-LD normalized Example    
 Here is an example of a Booking in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",  
@@ -603,9 +611,12 @@ Booking:
   ]  
 }  
 ```  
-<!-- /80-Examples -->  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
 <!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
