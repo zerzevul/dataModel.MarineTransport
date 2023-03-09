@@ -1,16 +1,25 @@
 {
     "@context": {
+        "Booking": "https://smartdatamodels.org/dataModel.MarineTransport/Booking",
         "Port": "https://smartdatamodels.org/dataModel.MarineTransport/Port",
         "PortAuthority": "https://smartdatamodels.org/dataModel.MarineTransport/PortAuthority",
         "Vessel": "https://smartdatamodels.org/dataModel.MarineTransport/Vessel",
+        "actualWindowFrom": "https://smartdatamodels.org/dataModel.MarineTransport/actualWindowFrom",
+        "actualWindowTo": "https://smartdatamodels.org/dataModel.MarineTransport/actualWindowTo",
         "address": "https://smartdatamodels.org/address",
         "airDraught": "https://smartdatamodels.org/dataModel.MarineTransport/airDraught",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "beam": "https://smartdatamodels.org/dataModel.MarineTransport/beam",
+        "bookingDate": "https://smartdatamodels.org/dataModel.MarineTransport/bookingDate",
+        "bookingNumber": "https://smartdatamodels.org/dataModel.MarineTransport/bookingNumber",
+        "bookingStatus": "https://smartdatamodels.org/dataModel.MarineTransport/bookingStatus",
         "buildingAt": "https://smartdatamodels.org/dataModel.MarineTransport/buildingAt",
         "callSign": "https://smartdatamodels.org/dataModel.MarineTransport/callSign",
+        "company": "https://smartdatamodels.org/dataModel.MarineTransport/company",
         "contactPoint": "https://smartdatamodels.org/contactPoint",
+        "containersExport": "https://smartdatamodels.org/dataModel.MarineTransport/containersExport",
+        "containersImport": "https://smartdatamodels.org/dataModel.MarineTransport/containersImport",
         "courseOverGround": "https://smartdatamodels.org/dataModel.MarineTransport/courseOverGround",
         "createdAt": {
             "@id": "ngsi-ld:createdAt",
@@ -23,7 +32,10 @@
         "description": "http://purl.org/dc/terms/description",
         "destinationPort": "https://smartdatamodels.org/dataModel.MarineTransport/destinationPort",
         "draught": "https://smartdatamodels.org/dataModel.MarineTransport/draught",
+        "enterDate": "https://smartdatamodels.org/dataModel.MarineTransport/enterDate",
         "estimatedTimeOfArrival": "https://smartdatamodels.org/dataModel.MarineTransport/estimatedTimeOfArrival",
+        "exportContainer1": "https://smartdatamodels.org/dataModel.MarineTransport/exportContainer1",
+        "exportContainer2": "https://smartdatamodels.org/dataModel.MarineTransport/exportContainer2",
         "financialOwner": "https://smartdatamodels.org/dataModel.MarineTransport/financialOwner",
         "flagCode": "https://smartdatamodels.org/dataModel.MarineTransport/flagCode",
         "gln": "https://smartdatamodels.org/dataModel.MarineTransport/gln",
@@ -31,6 +43,8 @@
         "heading": "https://smartdatamodels.org/dataModel.MarineTransport/heading",
         "id": "@id",
         "imo": "https://smartdatamodels.org/dataModel.MarineTransport/imo",
+        "importContainer1": "https://smartdatamodels.org/dataModel.MarineTransport/importContainer1",
+        "importContainer2": "https://smartdatamodels.org/dataModel.MarineTransport/importContainer2",
         "length": "https://smartdatamodels.org/dataModel.MarineTransport/length",
         "location": "ngsi-ld:location",
         "manager": "https://smartdatamodels.org/dataModel.MarineTransport/manager",
@@ -47,6 +61,8 @@
             "@id": "ngsi-ld:observedAt",
             "@type": "DateTime"
         },
+        "originalWindowFrom": "https://smartdatamodels.org/dataModel.MarineTransport/originalWindowFrom",
+        "originalWindowTo": "https://smartdatamodels.org/dataModel.MarineTransport/originalWindowTo",
         "owner": "https://smartdatamodels.org/owner",
         "ownerVessel": "https://smartdatamodels.org/dataModel.MarineTransport/ownerVessel",
         "photo": "https://smartdatamodels.org/dataModel.MarineTransport/photo",
@@ -70,6 +86,7 @@
         "type": "@type",
         "unlocode": "https://smartdatamodels.org/dataModel.MarineTransport/unlocode",
         "vesselSubType": "https://smartdatamodels.org/dataModel.MarineTransport/vesselSubType",
-        "vesselType": "https://smartdatamodels.org/dataModel.MarineTransport/vesselType"
+        "vesselType": "https://smartdatamodels.org/dataModel.MarineTransport/vesselType",
+        "windowDate": "https://smartdatamodels.org/dataModel.MarineTransport/windowDate"
     }
 }
