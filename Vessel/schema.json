@@ -41,7 +41,7 @@
               }
             }
           },
-          "description": "Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty."
+          "description": "GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty."
         },
         "imo": {
           "type": "number",
