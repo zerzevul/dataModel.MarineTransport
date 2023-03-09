@@ -14,7 +14,8 @@
 
 ## Lista de propiedades  
 
-- `actualWindowFrom`: Ventana horaria realmente utilizada, si la llegada se produjo 15' antes  - `actualWindowTo`: Ventana temporal realmente utilizada  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `bookingDate`: Fecha de reserva  - `bookingNumber`: ID único de la reserva  - `bookingStatus`: Estado de la reserva  - `company`: Empresa que efectúa la reserva  - `containersExport`: Número de contenedores a recoger en el patio CT  - `containersImport`: Número de contenedores para depositar en el depósito de CT  - `dataProvider`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Descripción de este artículo  - `enterDate`: Hora real de entrada  - `exportContainer1`: ID de contenedor único para el 1er contenedor a recoger  - `exportContainer2`: ID de contenedor único para el 2º contenedor a recoger  - `id`: Identificador único de la entidad  - `importContainer1`: Identificación única del primer contenedor que se va a depositar  - `importContainer2`: Identificación única del segundo contenedor que se va a depositar  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name`: El nombre de este artículo.  - `originalWindowFrom`: Ventana de tiempo reservada originalmente para entrar  - `originalWindowTo`: Plazo estimado originalmente para salir  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `windowDate`: Fecha de la ventana horaria  <!-- /30-PropertiesList -->  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `actualWindowFrom[number]`: Ventana horaria realmente utilizada, si la llegada se produjo 15' antes  - `actualWindowTo[number]`: Ventana temporal realmente utilizada  - `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `bookingDate[number]`: Fecha de reserva  - `bookingNumber[number]`: ID único de la reserva  - `bookingStatus[string]`: Estado de la reserva  - `company[string]`: Empresa que efectúa la reserva  - `containersExport[number]`: Número de contenedores a recoger en el patio CT  - `containersImport[number]`: Número de contenedores para depositar en el depósito de CT  - `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Descripción de este artículo  - `enterDate[number]`: Hora real de entrada  - `exportContainer1[string]`: ID de contenedor único para el 1er contenedor a recoger  - `exportContainer2[string]`: ID de contenedor único para el 2º contenedor a recoger  - `id[*]`: Identificador único de la entidad  - `importContainer1[string]`: Identificación única del primer contenedor que se va a depositar  - `importContainer2[string]`: Identificación única del segundo contenedor que se va a depositar  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo.  - `originalWindowFrom[number]`: Ventana de tiempo reservada originalmente para entrar  - `originalWindowTo[number]`: Plazo estimado originalmente para salir  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `windowDate[number]`: Fecha de la ventana horaria  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -400,6 +401,7 @@ Booking:
 ## Ejemplo de carga útil  
 #### Reserva de valores clave NGSI-v2 Ejemplo  
 He aquí un ejemplo de una Reserva en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",  
@@ -422,8 +424,10 @@ Booking:
   "importContainer2": ""  
 }  
 ```  
+</details>  
 #### Reservas NGSI-v2 normalizadas Ejemplo  
 He aquí un ejemplo de una Reserva en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",  
@@ -505,8 +509,10 @@ Booking:
   }  
 }  
 ```  
+</details>  
 #### Reserva de valores clave NGSI-LD Ejemplo  
 Aquí hay un ejemplo de una Reserva en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",  
@@ -532,8 +538,10 @@ Booking:
   ]  
 }  
 ```  
+</details>  
 #### Reservas NGSI-LD normalizadas Ejemplo  
 He aquí un ejemplo de una Reserva en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ThPA:Booking:463589473290389",  
@@ -603,9 +611,12 @@ Booking:
   ]  
 }  
 ```  
-<!-- /80-Examples -->  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
